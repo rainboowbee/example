@@ -1,0 +1,23 @@
+﻿@model laba6.Models.Event
+@{
+    ViewBag.Title = Model.EventName;
+}
+<h2>Название: @Model.EventName</h2>
+<div>
+    <dl class="dl-horizontal">
+        <dt>Место проведения</dt>
+        <dd>@Model.VenueName</dd>
+
+        <dt>Город</dt>
+        <dd>@Model.City</dd>
+
+        <dt>Улица</dt>
+        <dd>@Model.Street</dd>
+
+        <dt>Колличество билетов</dt>
+        <dd>@Model.TicketQuantity</dd>
+
+        <dt>Цена билета</dt>
+        <dd>@Model.TicketPrice</dd>
+    </dl>
+</div>

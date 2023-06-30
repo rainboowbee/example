@@ -1,0 +1,33 @@
+﻿@model laba6.Models.Event
+@{
+    ViewBag.Title = "Добавление мероприятия";
+}
+<form asp-action="create" asp-controller="Event">
+    <div class="form-group">
+        <label asp-for="EventName" class="control-label">Название мероприятия</label>
+        <input type="text" asp-for="EventName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="VenueName" class="control-label">Место проведения</label>
+        <input type="text" asp-for="VenueName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="City" class="control-label">Город</label>
+        <input type="text" asp-for="City" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Street" class="control-label">Улица</label>
+        <input type="text" asp-for="Street" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="TicketQuantity" class="control-label">Колличество билетов</label>
+        <input type="number" asp-for="TicketQuantity" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="TicketPrice" class="control-label">Колличество билетов</label>
+        <input type="number" asp-for="TicketPrice" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Cоздать" class="btn btn-default" />
+    </div>
+</form>
